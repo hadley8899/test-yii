@@ -6,13 +6,30 @@ use yii\helpers\Html;
 
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
+
+$count = 0;
+while($count !== 100) {
+    $this->params['breadcrumbs'][] = $count;
+    $count++;
+}
+
 ?>
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        This is the About page. You may modify the following file to customize its content:
-    </p>
+    <div class="card">
+        <div class="card-header">
+            Testing
+        </div>
 
-    <code><?= __FILE__ ?></code>
+        <div class="card-body">
+
+
+            This is the card body
+
+        </div>
+        <div class="card-footer">
+            This is he card footer
+        </div>
+    </div>
 </div>
